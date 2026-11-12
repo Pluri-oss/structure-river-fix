@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<SourceFile Condition="'$(SourceFile)' == ''">../../Source/V2/ABStructureFit.cs</SourceFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="$(SourceFile)" Link="ABStructureFit.cs" />
+	</ItemGroup>
+</Project>
